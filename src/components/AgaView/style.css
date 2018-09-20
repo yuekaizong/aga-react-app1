@@ -1,0 +1,236 @@
+.style1 {
+    width: 300px;
+    height: 75px;
+    background-color: darkseagreen;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#div2 {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.rcorners1 {
+    border-radius: 25px;
+    background: #8AC007;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.rcorners2 {
+    border-radius: 20px;
+    border: 2px solid #ff00ff;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.style2 {
+    width: 100%;
+    height: 300px;
+    background-image: url("card.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.style3 {
+    height: 200px;
+    background: linear-gradient(to right, red, blue);
+}
+
+h1 {
+    text-align: center;
+}
+
+p.overline {
+    text-decoration: overline;
+}
+
+p.line-through {
+    text-decoration: line-through;
+}
+
+p.underline {
+    text-decoration: underline;
+}
+
+p.date {
+    text-align: right;
+}
+
+p.uppercase {
+    text-transform: uppercase;
+}
+
+p.lowercase {
+    text-transform: lowercase;
+}
+
+p.capitalize {
+    text-transform: capitalize;
+}
+
+p.main {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+p.serif {
+    font-family: "Times New Roman", Times, Serif;
+}
+
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resizebox {
+    border: 2px solid;
+    padding: 10px 40px;
+    width: 100px;
+    resize: both;
+    overflow: auto;
+}
+
+.animation1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation: myanim 5s;
+    -webkit-animation: myanim 5s;
+}
+
+@keyframes myanim1 {
+    from {
+        background: red;
+    }
+    to {
+        background: yellow;
+    }
+}
+
+@-webkit-keyframes myanim1 {
+    from {
+        background: red;
+    }
+    to {
+        background: yellow;
+    }
+}
+
+.animation2 {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: relative;
+    animation: myanim2 5s;
+    -webkit-animation: myanim2 5s;
+}
+
+@keyframes myanim2 {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px
+    }
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px
+    }
+}
+
+@-webkit-keyframes myanim2 {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px
+    }
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px
+    }
+}
+
+img.corner {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+img.corner1 {
+    border-radius: 50%;
+}
+
+a.wrapper {
+    display: inline-block;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button1{
+    background-color: white;
+    color: black;
+    border: 2px solid #008cba;
+}
+
+.button1:hover{
+    background-color: #008cba;
+    color: white;
+}
