@@ -3,11 +3,15 @@ import React from 'react'
 import './style.css'
 import card from './card.jpg'
 import jojo from './jojo.jpg'
+import FlexLayout from "../../components/FlexLayout/index";
+import { Button } from 'antd-mobile';
 
 class AgaView extends React.Component {
     render() {
         return (
             <div>
+                <Button type="primary">This is a button</Button>
+                <FlexLayout/><br/>
                 <h1>CSS text-align实例</h1>
                 <p className='date'>2015年3月14号</p>
                 <p className='main'></p>
