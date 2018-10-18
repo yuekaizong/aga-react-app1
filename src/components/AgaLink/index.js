@@ -1,26 +1,26 @@
 import React from 'react'
 import {Button} from 'antd-mobile'
 import {HashRouter, Link, Route, Switch} from 'react-router-dom';
-import FlexLayout from "../FlexLayout/index";
-import WingBlankApp from "../WingBlankApp/index";
-import WhiteSpaceApp from "../WhiteSpaceApp/index";
-import DrawerApp from "../DrawerApp/index";
-import MenuApp from "../MenuApp/index";
-import OneLevelMenuApp from "../OneLevelMenuApp/index";
-import MultiSelectMenuApp from "../MultiSelectMenuApp/index";
-import SingleMultiMenuApp from "../SingleMultiMenuApp/index";
-import NarBarApp from "../NavBarApp/index";
-import PopoverApp from "../PopoverApp/index";
-import SegmentedControlApp from "../SegmentedControlApp/index";
-import TabApp1 from "../TabApp1/index";
-import TabApp2 from "../TabApp2/index";
-import TabApp3 from "../TabApp3/index";
-import TabApp4 from "../TabApp4/index";
-import TabApp5 from "../TabApp5/index";
-import TabApp6 from "../TabApp6/index";
-import TabBarApp1 from "../TabBarApp1/index";
-import TabBarApp2 from "../TabBarApp2/index";
-import TabBarApp3 from "../TabBarApp3/index";
+import FlexLayout from "../Layout/FlexLayout/index";
+import WingBlankApp from "../Layout/WingBlankApp/index";
+import WhiteSpaceApp from "../Layout/WhiteSpaceApp/index";
+import MenuApp from "../Menu/MenuApp/index";
+import OneLevelMenuApp from "../Menu/OneLevelMenuApp/index";
+import MultiSelectMenuApp from "../Menu/MultiSelectMenuApp/index";
+import SingleMultiMenuApp from "../Menu/SingleMultiMenuApp/index";
+import DrawerApp from "../Navigation/DrawerApp/index";
+import NarBarApp from "../Navigation/NavBarApp/index";
+import PopoverApp from "../Navigation/PopoverApp/index";
+import SegmentedControlApp from "../Navigation/SegmentedControlApp/index";
+import TabApp1 from "../Navigation/Tab/TabApp1/index";
+import TabApp2 from "../Navigation/Tab/TabApp2/index";
+import TabApp3 from "../Navigation/Tab/TabApp3/index";
+import TabApp4 from "../Navigation/Tab/TabApp4/index";
+import TabApp5 from "../Navigation/Tab/TabApp5/index";
+import TabApp6 from "../Navigation/Tab/TabApp6/index";
+import TabBarApp1 from "../Navigation/TabBar/TabBarApp1/index";
+import TabBarApp2 from "../Navigation/TabBar/TabBarApp2/index";
+import TabBarApp3 from "../Navigation/TabBar/TabBarApp3/index";
 
 
 const ListView = () => (
@@ -80,13 +80,13 @@ const Player = (props) => {
     if (player.name === "FlexLayout") {
         return <FlexLayout/>
     }
-    else if (player.name === "WingBlankApp"){
+    else if (player.name === "WingBlankApp") {
         return <WingBlankApp/>
     }
-    else if (player.name === "WhiteSpaceApp"){
+    else if (player.name === "WhiteSpaceApp") {
         return <WhiteSpaceApp/>
     }
-    else if (player.name === "DrawerApp"){
+    else if (player.name === "DrawerApp") {
         return <DrawerApp/>
     }
     else if (player.name == "MenuApp") {

@@ -3,7 +3,7 @@ import React from 'react'
 import './style.css'
 import card from './card.jpg'
 import jojo from './jojo.jpg'
-import FlexLayout from "../../components/FlexLayout/index";
+import FlexLayout from "../Layout/FlexLayout/index";
 import { Button } from 'antd-mobile';
 
 class AgaView extends React.Component {
