@@ -29,7 +29,7 @@ const ListView = () => (
             {
                 PlayerAPI.all().map(p => (
                     <Button key={p.number} type="primary">
-                        <Link to={`/roster/${p.number}`}>{p.name}</Link>
+                        <Link to={`/antdMobileRoster/${p.number}`}>{p.name}</Link>
                     </Button>
                 ))
             }
@@ -141,24 +141,24 @@ const Player = (props) => {
         <div>
             <h1>{player.name} (#{player.number})</h1>
             <h2>Position: {player.position}</h2>
-            <Link to='/roster'>Back</Link>
+            <Link to='/antdMobileRoster'>Back</Link>
         </div>
     )
 }
 
-// The Roster component matches one of two different routes
+// The antdMobileRoster component matches one of two different routes
 // depending on the full pathname
-const Roster = () => (
+const antdMobileRoster = () => (
     <Switch>
-        <Route exact path='/roster' component={ListView}/>
-        <Route path='/roster/:number' component={Player}/>
+        <Route exact path='/antdMobileRoster' component={ListView}/>
+        <Route path='/antdMobileRoster/:number' component={Player}/>
     </Switch>
 )
 
 const Main = () => (
     <main>
         <Switch>
-            <Route path='/roster' component={Roster}/>
+            <Route path='/antdMobileRoster' component={antdMobileRoster}/>
         </Switch>
     </main>
 )
@@ -166,7 +166,7 @@ const Main = () => (
 const AgaLink = () => (
     <HashRouter>
         <div>
-            <Link to={'/roster'}>Link</Link>
+            <Link to={'/antdMobileRoster'}>Ant Design Mobile</Link>
             <Main/>
         </div>
     </HashRouter>
