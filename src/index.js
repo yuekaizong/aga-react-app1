@@ -8,9 +8,11 @@ import DropDown from './components/DropDown';
 import AgaLink from './components/AgaLink';
 import Timer from './components/Timer';
 import AgaView from './components/AgaView';
+import App from "./App";
+import AgaApp from "./components/AgaApp";
 
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<AgaApp />, document.getElementById('root'));
 
 
 class LoggerView extends React.Component {
@@ -48,11 +50,11 @@ class LoggerView extends React.Component {
 function Panel() {
     return (
         <div>
-            <DropDown/><br/>
             <AgaLink/><br/>
+{/*            <DropDown/><br/>
             <Timer/><br/>
             <LoggerView name="标哥"/><br/>
-            <AgaView/><br/>
+            <AgaView/><br/>*/}
         </div>
     );
 }
