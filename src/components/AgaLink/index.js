@@ -14,6 +14,13 @@ import PopoverApp from "../PopoverApp/index";
 import SegmentedControlApp from "../SegmentedControlApp/index";
 import TabApp1 from "../TabApp1/index";
 import TabApp2 from "../TabApp2/index";
+import TabApp3 from "../TabApp3/index";
+import TabApp4 from "../TabApp4/index";
+import TabApp5 from "../TabApp5/index";
+import TabApp6 from "../TabApp6/index";
+import TabBarApp1 from "../TabBarApp1/index";
+import TabBarApp2 from "../TabBarApp2/index";
+import TabBarApp3 from "../TabBarApp3/index";
 
 
 const ListView = () => (
@@ -45,6 +52,13 @@ const PlayerAPI = {
         {number: 11, name: "SegmentedControlApp", position: "F"},
         {number: 12, name: "TabApp1", position: "F"},
         {number: 13, name: "TabApp2", position: "F"},
+        {number: 14, name: "TabApp3", position: "F"},
+        {number: 15, name: "TabApp4", position: "F"},
+        {number: 16, name: "TabApp5", position: "F"},
+        {number: 17, name: "TabApp6", position: "F"},
+        {number: 18, name: "TabBarApp1", position: "F"},
+        {number: 19, name: "TabBarApp2", position: "F"},
+        {number: 20, name: "TabBarApp3", position: "F"},
     ],
     all: function () {
         return this.players
@@ -101,6 +115,27 @@ const Player = (props) => {
     }
     else if (player.name == "TabApp2") {
         return <TabApp2/>
+    }
+    else if (player.name == "TabApp3") {
+        return <TabApp3/>
+    }
+    else if (player.name == "TabApp4") {
+        return <TabApp4/>
+    }
+    else if (player.name == "TabApp5") {
+        return <TabApp5/>
+    }
+    else if (player.name == "TabApp6") {
+        return <TabApp6/>
+    }
+    else if (player.name == "TabBarApp1") {
+        return <TabBarApp1/>
+    }
+    else if (player.name == "TabBarApp2") {
+        return <TabBarApp2/>
+    }
+    else if (player.name == "TabBarApp3") {
+        return <TabBarApp3/>
     }
     return (
         <div>
