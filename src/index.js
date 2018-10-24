@@ -3,20 +3,13 @@ import ReactDOM, {render} from 'react-dom';
 import './index.css';
 import 'whatwg-fetch'
 import registerServiceWorker from './registerServiceWorker';
-
-import DropDown from './components/DropDown';
 import AgaLink from './components/AgaLink';
-import Timer from './components/Timer';
-import AgaView from './components/AgaView';
-import App from "./App";
-import AgaApp from "./components/AgaApp";
 
 
 // ReactDOM.render(<AgaApp />, document.getElementById('root'));
 
 
 class LoggerView extends React.Component {
-
     constructor() {
         super();
         this.state = {

@@ -1,5 +1,4 @@
-import { TabBar } from 'antd-mobile';
-import ReactDOM, {render} from 'react-dom';
+import {TabBar} from 'antd-mobile';
 import React from 'react';
 
 class TabBarApp3 extends React.Component {

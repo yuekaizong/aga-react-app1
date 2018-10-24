@@ -1,5 +1,5 @@
-import { TabBar, ListView } from 'antd-mobile';
-import ReactDOM, {render} from 'react-dom';
+import {ListView, TabBar} from 'antd-mobile';
+import ReactDOM from 'react-dom';
 import React from 'react';
 
 const data = [

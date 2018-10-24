@@ -21,6 +21,8 @@ import TabApp6 from "../Navigation/Tab/TabApp6/index";
 import TabBarApp1 from "../Navigation/TabBar/TabBarApp1/index";
 import TabBarApp2 from "../Navigation/TabBar/TabBarApp2/index";
 import TabBarApp3 from "../Navigation/TabBar/TabBarApp3/index";
+import ButtonApp1 from "../DataEntry/Button/ButtonApp1/index";
+import ButtonApp2 from "../DataEntry/Button/ButtonApp2/index";
 
 
 const ListView = () => (
@@ -28,8 +30,9 @@ const ListView = () => (
         <ul>
             {
                 PlayerAPI.all().map(p => (
-                    <Button key={p.number} type="primary">
-                        <Link to={`/antdMobileRoster/${p.number}`}>{p.name}</Link>
+                    <Button key={p.number} type="primary" href={'#/antdMobileRoster/${p.number}'}>
+                        {/*<Link to={`/antdMobileRoster/${p.number}`}>{p.name}</Link>*/}
+                        {p.name}
                     </Button>
                 ))
             }
@@ -59,6 +62,8 @@ const PlayerAPI = {
         {number: 18, name: "TabBarApp1", position: "F"},
         {number: 19, name: "TabBarApp2", position: "F"},
         {number: 20, name: "TabBarApp3", position: "F"},
+        {number: 21, name: "ButtonApp1", position: "F"},
+        {number: 22, name: "ButtonApp2", position: "F"},
     ],
     all: function () {
         return this.players
@@ -89,53 +94,59 @@ const Player = (props) => {
     else if (player.name === "DrawerApp") {
         return <DrawerApp/>
     }
-    else if (player.name == "MenuApp") {
+    else if (player.name === "MenuApp") {
         return <MenuApp/>
     }
-    else if (player.name == "OneLevelMenuApp") {
+    else if (player.name === "OneLevelMenuApp") {
         return <OneLevelMenuApp/>
     }
-    else if (player.name == "MultiSelectMenuApp") {
+    else if (player.name === "MultiSelectMenuApp") {
         return <MultiSelectMenuApp/>
     }
-    else if (player.name == "SingleMultiMenuApp") {
+    else if (player.name === "SingleMultiMenuApp") {
         return <SingleMultiMenuApp/>
     }
-    else if (player.name == "NarBarApp") {
+    else if (player.name === "NarBarApp") {
         return <NarBarApp/>
     }
-    else if (player.name == "PopoverApp") {
+    else if (player.name === "PopoverApp") {
         return <PopoverApp/>
     }
-    else if (player.name == "SegmentedControlApp") {
+    else if (player.name === "SegmentedControlApp") {
         return <SegmentedControlApp/>
     }
-    else if (player.name == "TabApp1") {
+    else if (player.name === "TabApp1") {
         return <TabApp1/>
     }
-    else if (player.name == "TabApp2") {
+    else if (player.name === "TabApp2") {
         return <TabApp2/>
     }
-    else if (player.name == "TabApp3") {
+    else if (player.name === "TabApp3") {
         return <TabApp3/>
     }
-    else if (player.name == "TabApp4") {
+    else if (player.name === "TabApp4") {
         return <TabApp4/>
     }
-    else if (player.name == "TabApp5") {
+    else if (player.name === "TabApp5") {
         return <TabApp5/>
     }
-    else if (player.name == "TabApp6") {
+    else if (player.name === "TabApp6") {
         return <TabApp6/>
     }
-    else if (player.name == "TabBarApp1") {
+    else if (player.name === "TabBarApp1") {
         return <TabBarApp1/>
     }
-    else if (player.name == "TabBarApp2") {
+    else if (player.name === "TabBarApp2") {
         return <TabBarApp2/>
     }
-    else if (player.name == "TabBarApp3") {
+    else if (player.name === "TabBarApp3") {
         return <TabBarApp3/>
+    }
+    else if (player.name === "ButtonApp1") {
+        return <ButtonApp1/>
+    }
+    else if (player.name === "ButtonApp2") {
+        return <ButtonApp2/>
     }
     return (
         <div>

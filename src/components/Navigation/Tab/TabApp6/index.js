@@ -1,12 +1,6 @@
 import {Tabs, WhiteSpace} from 'antd-mobile';
 import React from 'react';
 
-const tabs = [
-    {title: 'First Tab'},
-    {title: 'Second Tab'},
-    {title: 'Third Tab'},
-];
-
 class TabApp6 extends React.Component {
     renderContent = tab =>
         (<div style={{
