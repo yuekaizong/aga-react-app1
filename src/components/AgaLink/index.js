@@ -23,6 +23,7 @@ import TabBarApp2 from "../Navigation/TabBar/TabBarApp2/index";
 import TabBarApp3 from "../Navigation/TabBar/TabBarApp3/index";
 import ButtonApp1 from "../DataEntry/Button/ButtonApp1/index";
 import ButtonApp2 from "../DataEntry/Button/ButtonApp2/index";
+import CheckboxApp from "../DataEntry/CheckboxApp/index";
 
 
 const ListView = () => (
@@ -64,6 +65,7 @@ const PlayerAPI = {
         {number: 20, name: "TabBarApp3", position: "F"},
         {number: 21, name: "ButtonApp1", position: "F"},
         {number: 22, name: "ButtonApp2", position: "F"},
+        {number: 23, name: "CheckboxApp", position: "F"},
     ],
     all: function () {
         return this.players
@@ -147,6 +149,9 @@ const Player = (props) => {
     }
     else if (player.name === "ButtonApp2") {
         return <ButtonApp2/>
+    }
+    else if (player.name === "ButtonApp2") {
+        return <CheckboxApp/>
     }
     return (
         <div>
