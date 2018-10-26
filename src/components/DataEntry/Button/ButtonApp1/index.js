@@ -39,6 +39,19 @@ class ButtonApp1 extends React.Component {
     handleClick02 = (e) => {
         console.log('##########################################################');
         console.log(this.state);
+        const extra = {
+            'key0': {
+                value: '0',
+                label: '&',
+            }
+        }
+
+        extra['key1'] = {
+            value: '1',
+            label: 'A',
+        }
+
+        console.log(extra);
     }
 
     render() {
