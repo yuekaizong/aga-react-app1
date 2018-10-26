@@ -25,6 +25,11 @@ import ButtonApp1 from "../DataEntry/Button/ButtonApp1/index";
 import ButtonApp2 from "../DataEntry/Button/ButtonApp2/index";
 import CheckboxApp from "../DataEntry/CheckboxApp/index";
 import CalendarApp from "../DataEntry/CalendarApp/index";
+import DatePickerViewApp from "../DataEntry/DatePickerViewApp/index";
+import DatePickerApp from "../DataEntry/DatePickerApp/index";
+import InputItemApp1 from "../DataEntry/InputItem/InputItemApp1/index";
+import InputItemApp2 from "../DataEntry/InputItem/InputItemApp2/index";
+import InputItemApp3 from "../DataEntry/InputItem/InputItemApp3/index";
 
 
 const ListView = () => (
@@ -32,10 +37,10 @@ const ListView = () => (
         <ul>
             {
                 PlayerAPI.all().map(p => (
-                    <Button key={p.number} type="primary" href={'#/antdMobileRoster/${p.number}'}>
-                        {/*<Link to={`/antdMobileRoster/${p.number}`}>{p.name}</Link>*/}
-                        {p.name}
-                    </Button>
+                    <li key={p.number}>
+                        <Link to={`/antdMobileRoster/${p.number}`}>{p.name}</Link>
+                    </li>
+
                 ))
             }
         </ul>
@@ -68,6 +73,11 @@ const PlayerAPI = {
         {number: 22, name: "ButtonApp2", position: "F"},
         {number: 23, name: "CheckboxApp", position: "F"},
         {number: 24, name: "CalendarApp", position: "F"},
+        {number: 25, name: "DatePickerViewApp", position: "F"},
+        {number: 26, name: "DatePickerApp", position: "F"},
+        {number: 27, name: "InputItemApp1", position: "F"},
+        {number: 28, name: "InputItemApp2", position: "F"},
+        {number: 29, name: "InputItemApp3", position: "F"},
     ],
     all: function () {
         return this.players
@@ -157,6 +167,21 @@ const Player = (props) => {
     }
     else if (player.name === "CalendarApp") {
         return <CalendarApp/>
+    }
+    else if (player.name === "DatePickerViewApp") {
+        return <DatePickerViewApp/>
+    }
+    else if (player.name === "DatePickerApp") {
+        return <DatePickerApp/>
+    }
+    else if (player.name === "InputItemApp1") {
+        return <InputItemApp1/>
+    }
+    else if (player.name === "InputItemApp2") {
+        return <InputItemApp2/>
+    }
+    else if (player.name === "InputItemApp3") {
+        return <InputItemApp3/>
     }
     return (
         <div>

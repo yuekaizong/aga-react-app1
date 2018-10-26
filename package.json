@@ -6,6 +6,7 @@
     "antd-mobile": "^2.2.5",
     "babel-plugin-import": "^1.9.1",
     "babel-preset-react": "^6.24.1",
+    "rc-form": "^2.2.6",
     "react": "^16.5.2",
     "react-app-rewired": "^1.6.2",
     "react-dom": "^16.5.2",
