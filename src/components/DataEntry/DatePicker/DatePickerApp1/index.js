@@ -36,7 +36,7 @@ const CustomChildren = ({extra, onClick, children}) => (
     </div>
 );
 
-class DatePickerApp extends React.Component {
+class DatePickerApp1 extends React.Component {
     state = {
         date: now,
         time: now,
@@ -122,4 +122,4 @@ class DatePickerApp extends React.Component {
     }
 }
 
-export default DatePickerApp;
+export default DatePickerApp1;

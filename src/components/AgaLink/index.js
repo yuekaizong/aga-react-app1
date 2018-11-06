@@ -26,7 +26,8 @@ import ButtonApp2 from "../DataEntry/Button/ButtonApp2/index";
 import CheckboxApp from "../DataEntry/CheckboxApp/index";
 import CalendarApp from "../DataEntry/CalendarApp/index";
 import DatePickerViewApp from "../DataEntry/DatePickerViewApp/index";
-import DatePickerApp from "../DataEntry/DatePickerApp/index";
+import DatePickerApp1 from "../DataEntry/DatePicker/DatePickerApp1/index";
+import DatePickerApp2 from "../DataEntry/DatePicker/DatePickerApp2/index";
 import InputItemApp1 from "../DataEntry/InputItem/InputItemApp1/index";
 import InputItemApp2 from "../DataEntry/InputItem/InputItemApp2/index";
 import InputItemApp3 from "../DataEntry/InputItem/InputItemApp3/index";
@@ -74,10 +75,11 @@ const PlayerAPI = {
         {number: 23, name: "CheckboxApp", position: "F"},
         {number: 24, name: "CalendarApp", position: "F"},
         {number: 25, name: "DatePickerViewApp", position: "F"},
-        {number: 26, name: "DatePickerApp", position: "F"},
-        {number: 27, name: "InputItemApp1", position: "F"},
-        {number: 28, name: "InputItemApp2", position: "F"},
-        {number: 29, name: "InputItemApp3", position: "F"},
+        {number: 26, name: "DatePickerApp1", position: "F"},
+        {number: 27, name: "DatePickerApp2", position: "F"},
+        {number: 28, name: "InputItemApp1", position: "F"},
+        {number: 29, name: "InputItemApp2", position: "F"},
+        {number: 30, name: "InputItemApp3", position: "F"},
     ],
     all: function () {
         return this.players
@@ -171,8 +173,11 @@ const Player = (props) => {
     else if (player.name === "DatePickerViewApp") {
         return <DatePickerViewApp/>
     }
-    else if (player.name === "DatePickerApp") {
-        return <DatePickerApp/>
+    else if (player.name === "DatePickerApp1") {
+        return <DatePickerApp1/>
+    }
+    else if (player.name === "DatePickerApp2") {
+        return <DatePickerApp2/>
     }
     else if (player.name === "InputItemApp1") {
         return <InputItemApp1/>
