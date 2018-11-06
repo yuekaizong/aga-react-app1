@@ -31,6 +31,9 @@ import DatePickerApp2 from "../DataEntry/DatePicker/DatePickerApp2/index";
 import InputItemApp1 from "../DataEntry/InputItem/InputItemApp1/index";
 import InputItemApp2 from "../DataEntry/InputItem/InputItemApp2/index";
 import InputItemApp3 from "../DataEntry/InputItem/InputItemApp3/index";
+import ImagePickerApp1 from "../ImagePicker/ImagePickerApp1/index";
+import ImagePickerApp2 from "../ImagePicker/ImagePickerApp2/index";
+import {ImagePickerApp3} from "../ImagePicker/ImagePickerApp3/index";
 
 
 const ListView = () => (
@@ -80,6 +83,9 @@ const PlayerAPI = {
         {number: 28, name: "InputItemApp1", position: "F"},
         {number: 29, name: "InputItemApp2", position: "F"},
         {number: 30, name: "InputItemApp3", position: "F"},
+        {number: 31, name: "ImagePickerApp1", position: "F"},
+        {number: 32, name: "ImagePickerApp2", position: "F"},
+        {number: 32, name: "ImagePickerApp3", position: "F"},
     ],
     all: function () {
         return this.players
@@ -187,6 +193,15 @@ const Player = (props) => {
     }
     else if (player.name === "InputItemApp3") {
         return <InputItemApp3/>
+    }
+    else if (player.name === "ImagePickerApp1") {
+        return <ImagePickerApp1/>
+    }
+    else if (player.name === "ImagePickerApp2") {
+        return <ImagePickerApp2/>
+    }
+    else if (player.name === "ImagePickerApp3") {
+        return <ImagePickerApp3/>
     }
     return (
         <div>
