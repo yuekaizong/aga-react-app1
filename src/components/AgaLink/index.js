@@ -31,9 +31,11 @@ import DatePickerApp2 from "../DataEntry/DatePicker/DatePickerApp2/index";
 import InputItemApp1 from "../DataEntry/InputItem/InputItemApp1/index";
 import InputItemApp2 from "../DataEntry/InputItem/InputItemApp2/index";
 import InputItemApp3 from "../DataEntry/InputItem/InputItemApp3/index";
-import ImagePickerApp1 from "../ImagePicker/ImagePickerApp1/index";
-import ImagePickerApp2 from "../ImagePicker/ImagePickerApp2/index";
-import {ImagePickerApp3} from "../ImagePicker/ImagePickerApp3/index";
+import ImagePickerApp1 from "../DataEntry/ImagePicker/ImagePickerApp1/index";
+import ImagePickerApp2 from "../DataEntry/ImagePicker/ImagePickerApp2/index";
+import {ImagePickerApp3} from "../DataEntry/ImagePicker/ImagePickerApp3/index";
+import {PickerViewApp1} from "../DataEntry/PickerView/PickerViewApp1/index";
+import {RadioApp1} from "../DataEntry/Radio/RadioApp1/index";
 
 
 const ListView = () => (
@@ -85,7 +87,9 @@ const PlayerAPI = {
         {number: 30, name: "InputItemApp3", position: "F"},
         {number: 31, name: "ImagePickerApp1", position: "F"},
         {number: 32, name: "ImagePickerApp2", position: "F"},
-        {number: 32, name: "ImagePickerApp3", position: "F"},
+        {number: 33, name: "ImagePickerApp3", position: "F"},
+        {number: 34, name: "PickerViewApp1", position: "F"},
+        {number: 36, name: "RadioApp1", position: "F"},
     ],
     all: function () {
         return this.players
@@ -202,6 +206,12 @@ const Player = (props) => {
     }
     else if (player.name === "ImagePickerApp3") {
         return <ImagePickerApp3/>
+    }
+    else if (player.name === "PickerViewApp1") {
+        return <PickerViewApp1/>
+    }
+    else if (player.name === "RadioApp1") {
+        return <RadioApp1/>
     }
     return (
         <div>
