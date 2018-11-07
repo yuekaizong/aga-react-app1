@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "antd-mobile": "^2.2.5",
+    "antd-mobile-demo-data": "^0.2.0",
     "babel-plugin-import": "^1.9.1",
     "babel-preset-react": "^6.24.1",
     "rc-form": "^2.2.6",

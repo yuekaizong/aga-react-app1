@@ -36,7 +36,43 @@ import ImagePickerApp2 from "../DataEntry/ImagePicker/ImagePickerApp2/index";
 import {ImagePickerApp3} from "../DataEntry/ImagePicker/ImagePickerApp3/index";
 import {PickerViewApp1} from "../DataEntry/PickerView/PickerViewApp1/index";
 import {RadioApp1} from "../DataEntry/Radio/RadioApp1/index";
-
+import {RangeApp1} from "../DataEntry/Range/RangeApp1/index";
+import {SwitchApp1} from "../DataEntry/Switch/SwitchApp1/index";
+import {StepperApp1} from "../DataEntry/Stepper/StepperApp1/index";
+import {SliderApp1} from "../DataEntry/Slider/SliderApp1/index";
+import {SearchBarApp1} from "../DataEntry/SearchBar/SearchBarApp1/index";
+import {TextareaItemApp1} from "../DataEntry/TextareaItem/TextareaItemApp1/index";
+import {AccordionApp1} from "../DataDisplay/Accordion/AccordionApp1/index";
+import {AccordionApp2} from "../DataDisplay/Accordion/AccordionApp2/index";
+import {ActivityIndicatorApp1} from "../Feedback/ActivityIndicator/ActivityIndicatorApp1/index";
+import {ModelApp1} from "../Feedback/Modal/ModelApp1/index";
+import {ModelApp2} from "../Feedback/Modal/ModelApp2/index";
+import {ModelApp3} from "../Feedback/Modal/ModelApp3/index";
+import {ModelApp4} from "../Feedback/Modal/ModelApp4/index";
+import {BadgeApp1} from "../DataDisplay/Badge/BadgeApp1/index";
+import {CardApp1} from "../DataDisplay/Card/CardApp1/index";
+import {CardApp2} from "../DataDisplay/Card/CardApp2/index";
+import {GridApp1} from "../DataDisplay/Grid/GridApp1/index";
+import {IconApp1} from "../DataDisplay/Icon/IconApp1/index";
+import {IconApp2} from "../DataDisplay/Icon/IconApp2/index";
+import {ListApp1} from "../DataDisplay/List/ListApp1/index";
+import {ListApp2} from "../DataDisplay/List/ListApp2/index";
+import {NoticeBarApp1} from "../DataDisplay/NoticeBar/NoticeBarApp1/index";
+import {StepsApp1} from "../DataDisplay/Steps/StepsApp1/index";
+import {StepsApp2} from "../DataDisplay/Steps/StepsApp2/index";
+import {TagApp1} from "../DataDisplay/Tag/TagApp1/index";
+import {ActionSheetApp1} from "../Feedback/ActionSheet/ActionSheetApp1/index";
+import {ProgressApp1} from "../Feedback/Progress/ProgressApp1/index";
+import {ToastApp1} from "../Feedback/Toast/ToastApp1/index";
+import {PullToRefreshApp1} from "../Gesture/PullToRefresh/PullToRefreshApp1/index";
+import {PullToRefreshApp2} from "../Gesture/PullToRefresh/PullToRefreshApp2/index";
+import {SwipeActionApp1} from "../Gesture/SwipeAction/SwipeActionApp1/index";
+import {ListViewApp1} from "../Combination/ListView/ListViewApp1/index";
+import {ListViewApp2} from "../Combination/ListView/ListViewApp2/index";
+import {ListViewApp3} from "../Combination/ListView/ListViewApp3/index";
+import {ListViewApp4} from "../Combination/ListView/ListViewApp4/index";
+import {ResultApp1} from "../Combination/Result/ResultApp1/index";
+import {LocaleProviderApp1} from "../Other/LocaleProvider/LocaleProviderApp1/index";
 
 const ListView = () => (
     <div>
@@ -90,6 +126,43 @@ const PlayerAPI = {
         {number: 33, name: "ImagePickerApp3", position: "F"},
         {number: 34, name: "PickerViewApp1", position: "F"},
         {number: 36, name: "RadioApp1", position: "F"},
+        {number: 37, name: "RangeApp1", position: "F"},
+        {number: 38, name: "SwitchApp1", position: "F"},
+        {number: 39, name: "StepperApp1", position: "F"},
+        {number: 40, name: "SliderApp1", position: "F"},
+        {number: 41, name: "SearchBarApp1", position: "F"},
+        {number: 42, name: "TextareaItemApp1", position: "F"},
+        {number: 43, name: "AccordionApp1", position: "F"},
+        {number: 44, name: "AccordionApp2", position: "F"},
+        {number: 45, name: "ActivityIndicatorApp1", position: "F"},
+        {number: 46, name: "ModelApp1", position: "F"},
+        {number: 47, name: "ModelApp2", position: "F"},
+        {number: 48, name: "ModelApp3", position: "F"},
+        {number: 49, name: "ModelApp4", position: "F"},
+        {number: 50, name: "BadgeApp1", position: "F"},
+        {number: 51, name: "CardApp1", position: "F"},
+        {number: 52, name: "CardApp2", position: "F"},
+        {number: 53, name: "GridApp1", position: "F"},
+        {number: 54, name: "IconApp1", position: "F"},
+        {number: 55, name: "IconApp2", position: "F"},
+        {number: 56, name: "ListApp1", position: "F"},
+        {number: 57, name: "ListApp2", position: "F"},
+        {number: 58, name: "NoticeBarApp1", position: "F"},
+        {number: 59, name: "StepsApp1", position: "F"},
+        {number: 60, name: "StepsApp2", position: "F"},
+        {number: 61, name: "TagApp1", position: "F"},
+        {number: 62, name: "ActionSheetApp1", position: "F"},
+        {number: 63, name: "ProgressApp1", position: "F"},
+        {number: 64, name: "ToastApp1", position: "F"},
+        {number: 65, name: "PullToRefreshApp1", position: "F"},
+        {number: 66, name: "PullToRefreshApp2", position: "F"},
+        {number: 67, name: "SwipeActionApp1", position: "F"},
+        {number: 68, name: "ListViewApp1", position: "F"},
+        {number: 69, name: "ListViewApp2", position: "F"},
+        {number: 70, name: "ListViewApp3", position: "F"},
+        {number: 71, name: "ListViewApp4", position: "F"},
+        {number: 72, name: "ResultApp1", position: "F"},
+        {number: 73, name: "LocaleProviderApp1", position: "F"},
     ],
     all: function () {
         return this.players
@@ -213,6 +286,117 @@ const Player = (props) => {
     else if (player.name === "RadioApp1") {
         return <RadioApp1/>
     }
+    else if (player.name === "RangeApp1") {
+        return <RangeApp1/>
+    }
+    else if (player.name === "SwitchApp1") {
+        return <SwitchApp1/>
+    }
+    else if (player.name === "StepperApp1") {
+        return <StepperApp1/>
+    }
+    else if (player.name === "SliderApp1") {
+        return <SliderApp1/>
+    }
+    else if (player.name === "SearchBarApp1") {
+        return <SearchBarApp1/>
+    }
+    else if (player.name === "TextareaItemApp1") {
+        return <TextareaItemApp1/>
+    }
+    else if (player.name === "AccordionApp1") {
+        return <AccordionApp1/>
+    }
+    else if (player.name === "AccordionApp2") {
+        return <AccordionApp2/>
+    }
+    else if (player.name === "ActivityIndicatorApp1") {
+        return <ActivityIndicatorApp1/>
+    }
+    else if (player.name === "ModelApp1") {
+        return <ModelApp1/>
+    }
+    else if (player.name === "ModelApp2") {
+        return <ModelApp2/>
+    }
+    else if (player.name === "ModelApp3") {
+        return <ModelApp3/>
+    }
+    else if (player.name === "ModelApp4") {
+        return <ModelApp4/>
+    }
+    else if (player.name === "BadgeApp1") {
+        return <BadgeApp1/>
+    }
+    else if (player.name === "CardApp1") {
+        return <CardApp1/>
+    }
+    else if (player.name === "CardApp2") {
+        return <CardApp2/>
+    }
+    else if (player.name === "GridApp1") {
+        return <GridApp1/>
+    }
+    else if (player.name === "IconApp1") {
+        return <IconApp1/>
+    }
+    else if (player.name === "IconApp2") {
+        return <IconApp2/>
+    }
+    else if (player.name === "ListApp1") {
+        return <ListApp1/>
+    }
+    else if (player.name === "ListApp2") {
+        return <ListApp2/>
+    }
+    else if (player.name === "NoticeBarApp1") {
+        return <NoticeBarApp1/>
+    }
+    else if (player.name === "StepsApp1") {
+        return <StepsApp1/>
+    }
+    else if (player.name === "StepsApp2") {
+        return <StepsApp2/>
+    }
+    else if (player.name === "TagApp1") {
+        return <TagApp1/>
+    }
+    else if (player.name === "ActionSheetApp1") {
+        return <ActionSheetApp1/>
+    }
+    else if (player.name === "ProgressApp1") {
+        return <ProgressApp1/>
+    }
+    else if (player.name === "ToastApp1") {
+        return <ToastApp1/>
+    }
+    else if (player.name === "PullToRefreshApp1") {
+        return <PullToRefreshApp1/>
+    }
+    else if (player.name === "PullToRefreshApp2") {
+        return <PullToRefreshApp2/>
+    }
+    else if (player.name === "SwipeActionApp1") {
+        return <SwipeActionApp1/>
+    }
+    else if (player.name === "ListViewApp1") {
+        return <ListViewApp1/>
+    }
+    else if (player.name === "ListViewApp2") {
+        return <ListViewApp2/>
+    }
+    else if (player.name === "ListViewApp3") {
+        return <ListViewApp3/>
+    }
+    else if (player.name === "ListViewApp4") {
+        return <ListViewApp4/>
+    }
+    else if (player.name === "ResultApp1") {
+        return <ResultApp1/>
+    }
+    else if (player.name === "LocaleProviderApp1") {
+        return <LocaleProviderApp1/>
+    }
     return (
         <div>
             <h1>{player.name} (#{player.number})</h1>
@@ -239,7 +423,8 @@ const Main = () => (
     </main>
 )
 
-const AgaLink = () => (
+const
+    AgaLink = () => (
     <HashRouter>
         <div>
             <Link to={'/antdMobileRoster'}>Ant Design Mobile</Link>
