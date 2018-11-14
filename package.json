@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd-mobile": "^2.2.5",
+    "@babel/core": "^7.0.0",
+    "antd-mobile": "^2.2.6",
     "antd-mobile-demo-data": "^0.2.0",
-    "babel-plugin-import": "^1.9.1",
-    "babel-preset-react": "^6.24.1",
+    "babel-plugin-import": "^1.11.0",
     "rc-form": "^2.2.6",
-    "react": "^16.5.2",
+    "react": "^16.6.3",
     "react-app-rewired": "^1.6.2",
-    "react-dom": "^16.5.2",
+    "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "react-sticky": "^6.0.3",
@@ -23,12 +23,15 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/plugin-proposal-class-properties": "7.0",
+    "babel-core": "^7.0.0-beta.41",
     "babel-loader": "^7.1.5",
+    "babel-preset-env": "^7.0.0-beta.3",
+    "babel-preset-react": "^7.0.0-beta.3",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "url-loader": "^1.1.1",
-    "webpack": "^4.19.1",
-    "webpack-cli": "^3.1.0"
+    "url-loader": "^1.1.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
   }
 }

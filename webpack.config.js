@@ -1,4 +1,3 @@
-
 // webpack.config.js
 
 const webpack = require('webpack');
@@ -6,7 +5,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.jsx',
+    entry: './src/index.js',
 
     output: {
         filename: '[name].bundle.js',
@@ -20,14 +19,15 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 options: {
-                    presets: ['env']
+                    presets: ['env'],
+                    plugins: ['@babel/plugin-proposal-class-properties']
                 }
             },
             {
                 test: /\.css$/,
                 use: [
-                    { loader: 'style-loader', options: { sourceMap: true } },
-                    { loader: 'css-loader' }
+                    {loader: 'style-loader', options: {sourceMap: true}},
+                    {loader: 'css-loader'}
                 ]
             },
             {
