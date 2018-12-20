@@ -7102,6 +7102,12 @@ react@^16.6.3:
     prop-types "^15.6.2"
     scheduler "^0.11.2"
 
+reactjs-swiper@^0.1.0:
+  version "0.1.0"
+  resolved "http://registry.npm.taobao.org/reactjs-swiper/download/reactjs-swiper-0.1.0.tgz#38d2dbc4ffe896ecb7293643475555828ce080f1"
+  dependencies:
+    swiper "^3.4.2"
+
 read-pkg-up@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/read-pkg-up/download/read-pkg-up-1.0.1.tgz#9d63c13276c065918d57f002a57f40a1b643fb02"
@@ -8187,6 +8193,10 @@ sw-toolbox@^3.4.0:
   dependencies:
     path-to-regexp "^1.0.1"
     serviceworker-cache-polyfill "^4.0.0"
+
+swiper@^3.4.2:
+  version "3.4.2"
+  resolved "http://registry.npm.taobao.org/swiper/download/swiper-3.4.2.tgz#39d6b410b1a39833e1f72d3b72999df5f5e38392"
 
 symbol-tree@^3.2.1:
   version "3.2.2"

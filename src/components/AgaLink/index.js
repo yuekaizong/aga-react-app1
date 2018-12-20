@@ -73,6 +73,12 @@ import {ListViewApp3} from "../Combination/ListView/ListViewApp3/index";
 import {ListViewApp4} from "../Combination/ListView/ListViewApp4/index";
 import {ResultApp1} from "../Combination/Result/ResultApp1/index";
 import {LocaleProviderApp1} from "../Other/LocaleProvider/LocaleProviderApp1/index";
+import {SwiperApp} from "../AgaApp/Swiper/index"
+import CarouselApp1 from "../DataDisplay/Carousel/CarouselApp1/index";
+import {CarouselApp2} from "../DataDisplay/Carousel/CarouselApp2/index";
+import {CarouselApp3} from "../DataDisplay/Carousel/CarouselApp3/index";
+import {CarouselApp4} from "../DataDisplay/Carousel/CarouselApp4/index";
+import {CarouselApp5} from "../DataDisplay/Carousel/CarouselApp5/index";
 
 const ListView = () => (
     <div>
@@ -163,6 +169,12 @@ const PlayerAPI = {
         {number: 71, name: "ListViewApp4", position: "F"},
         {number: 72, name: "ResultApp1", position: "F"},
         {number: 73, name: "LocaleProviderApp1", position: "F"},
+        {number: 74, name: "CarouselApp1", position: "F"},
+        {number: 75, name: "CarouselApp2", position: "F"},
+        {number: 76, name: "CarouselApp3", position: "F"},
+        {number: 77, name: "CarouselApp4", position: "F"},
+        {number: 78, name: "CarouselApp5", position: "F"},
+        {number: 99, name: "SwiperApp", position: "F"},
     ],
     all: function () {
         return this.players
@@ -396,6 +408,24 @@ const Player = (props) => {
     }
     else if (player.name === "LocaleProviderApp1") {
         return <LocaleProviderApp1/>
+    }
+    else if (player.name === "CarouselApp1") {
+        return <CarouselApp1/>
+    }
+    else if (player.name === "CarouselApp2") {
+        return <CarouselApp2/>
+    }
+    else if (player.name === "CarouselApp3") {
+        return <CarouselApp3/>
+    }
+    else if (player.name === "CarouselApp4") {
+        return <CarouselApp4/>
+    }
+    else if (player.name === "CarouselApp5") {
+        return <CarouselApp5/>
+    }
+    else if (player.name === "SwiperApp") {
+        return <SwiperApp/>
     }
     return (
         <div>
