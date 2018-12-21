@@ -79,6 +79,7 @@ import {CarouselApp2} from "../DataDisplay/Carousel/CarouselApp2/index";
 import {CarouselApp3} from "../DataDisplay/Carousel/CarouselApp3/index";
 import {CarouselApp4} from "../DataDisplay/Carousel/CarouselApp4/index";
 import {CarouselApp5} from "../DataDisplay/Carousel/CarouselApp5/index";
+import LoanHome from "../AgaApp/LoanHome/index";
 
 const ListView = () => (
     <div>
@@ -174,7 +175,8 @@ const PlayerAPI = {
         {number: 76, name: "CarouselApp3", position: "F"},
         {number: 77, name: "CarouselApp4", position: "F"},
         {number: 78, name: "CarouselApp5", position: "F"},
-        {number: 99, name: "SwiperApp", position: "F"},
+        {number: 100, name: "SwiperApp", position: "F"},
+        {number: 101, name: "LoanHome", position: "F"},
     ],
     all: function () {
         return this.players
@@ -426,6 +428,9 @@ const Player = (props) => {
     }
     else if (player.name === "SwiperApp") {
         return <SwiperApp/>
+    }
+    else if (player.name === "LoanHome") {
+        return <LoanHome/>
     }
     return (
         <div>
